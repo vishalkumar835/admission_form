@@ -1,0 +1,145 @@
+
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+
+<title>Student Admission Form</title>
+<h1><marquee behavior="scroll" class="text-info">VIDYA VIHAR INSTITUTE OF TECHNOLOGY PURNEA BIHAR</marquee> </h1>
+</head>
+<body bgcolor="teal">
+      <div class="container">
+         <form action="registration.php" method="GET"  class="form-verticle">
+            <div class="form-group">
+            <table border="1" align="center" height="30%" width="40%" cellspacing="0" cellpadding="2" class="table table-hover">
+               <tbody>
+    <tr>                       
+    <th colspan="2">        
+<h1 align="center" class="text-dark"><u>Admission Form</u></h1>
+
+<div class="text-danger">
+<p >* Note:Please fill all the details in Capital Letters only.</p>
+</div>
+
+<form method="post" action="getadmission.php" >
+Select Course: 
+<select name="cmbCourse">
+	<option value="BCA">BCA</option>
+    <option value="BBA">BBA</option>
+    <option value="B.Tech">B.Tech</option>
+    <option value="M.Tech">M.Tech</option>
+</select>
+</th>
+</tr>
+<br />
+
+	<tr>
+    	<td>
+			Enter Name:
+       </td>
+       <td>
+          <input type="text" name="txtName" id="txtName" placeholder="Enter Your Name" />
+       </td>
+    </tr>
+    <tr> 
+    	<td>
+            Enter Father Name:   
+         </td>
+         <td>
+ 			<input type="text" name="txtFName" id="txtFName" placeholder="Enter Your Father Name"  /><br />
+         </td>
+    </tr>
+    <tr>
+        <td>
+            Enter Mother Name:
+        </td>
+        <td>
+            <input type="text" name="txtMName" id="txtMName" placeholder="Enter Your Mother Name"  /><br />
+        </td>
+     </tr>       
+    <tr>
+       <td>
+            Enter Mobile No:
+        </td>
+        <td>
+           <input type="text" name="txtMob" id="txtMob"  maxlength="10" placeholder="Enter Your Mobile No"/><br />
+         </td>
+    </tr>
+    <tr>
+       <td> 
+            Enter Email-id:
+       </td>
+       <td>
+          <input type="text" name="txtEmail" id="txtEmail" placeholder="Enter Your Email id " /><br />
+       </td>  
+    </tr>
+    <tr>
+      <td> 
+           Date of Birth:
+      </td>
+      <td>
+         <input type="date" name="dob" id="dob" /><br />
+      </td>  
+   </tr>
+    <tr>
+       <td>
+            Enter Full Address:
+       </td>
+       <td>     
+          <textarea rows="6" cols="25" name="txtAddress" id="txtAddress" placeholder=" please Enter Your Address" required></textarea> 
+         
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+               Select Gender: &nbsp;
+             </td>
+             <td>
+               Male<input type="radio" name="optGender" value="Male" />
+              Female<input type="radio" name="optGender" value="Female" />
+              Other<input type="radio" name="optGender" value="other" />
+
+              </td>
+         </tr>
+
+
+         <tr>
+            <td>
+               Select Extra Co Curriculor Activities:
+             </td>
+             <td>
+               Games<input type="checkbox" value="games" name="chkGames" id="chkGames" />
+                Music<input type="checkbox" value="music" name="chkMusic" id="chkMusic" />
+                coding<input type="checkbox" value="coding" name="chkcoding" id="chkcoding" />
+
+              </td>
+            </tr>
+            <tr>
+               <td>Upload Photo</td>
+               <td> <input type="file" name="photo" > </td>	
+            
+            </tr>
+            <tr>
+               <td colspan="2">  
+                <input type="checkbox" name="chkAgree" id="chkAgree" /> I agree that all the above filled data are correct as per my knowledge.
+               </td>
+             </tr>
+   <tr>
+      <td colspan="2"><input type="submit" name="submitbtn" value="Send Form" class="btn btn-success">
+
+                <input type="reset" value="Clear Form" class="btn btn-danger"/>
+</td>
+</tr>
+</td>
+</tr>
+       </tbody>
+    </table>
+  </div>
+</form>
+</div>
+</body>
+</html>
